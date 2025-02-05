@@ -539,6 +539,8 @@ header {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+  overflow-x: auto;
+  max-width: 600px;
 }
 
 .projects__grid {
@@ -546,6 +548,7 @@ header {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin: 4rem 0;
+
 }
 
 .projects__card {
@@ -912,4 +915,30 @@ __grid {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+    .projects__container :is(.section__title, .section__subtitle, .view__all) {
+    text-align: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    overflow-y: scroll;
+    max-height: 200px;
+    justify-items: center;
+  }
+  .projects__grid {
+    display: grid;
+    justify-items: center; /* Centers items horizontally */
+    align-items: center; 
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
+  }
+  
+
 }
+
+@media (width < 420px) {
+  .footer__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}  
