@@ -65,6 +65,30 @@
   transition: 0.3s;
 }
 
+
+.link a{
+  color: black;
+   transition: color var(--transition-duration) ease;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.link a::before {
+    content: '';
+    position: absolute;
+   bottom: -5px; 
+   left: 0;
+  width: 0;
+    height: 2px;
+   background-color: var(--primary-color);
+   transition: width var(--transition-duration) ease;
+}
+.link a:hover::before {  
+  width: 100%;
+  transition: 0.4s;
+}
+
 .btn:hover {
   background-color: var(--primary-color-dark);
 }
@@ -112,7 +136,7 @@ nav {
   align-items: center;
   gap: 1rem;
 }
-
+/*
 .link a {
   padding: 0 1rem;
   color: var(--text-dark);
@@ -121,7 +145,7 @@ nav {
 
 .link a:hover {
   color: var(--primary-color);
-}
+} */
 
 header {
   background-color: var(--secondary-color);
@@ -136,6 +160,9 @@ header {
 
 .header__image {
   position: relative;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideInLeft 1s ease-out forwards;
 }
 
 .header__image img {
@@ -162,12 +189,37 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInRight 1s ease-out forwards;
 }
 
 .header__content > div {
   max-width: 400px;
   display: grid;
   gap: 1rem;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .header__content .sub__header {
@@ -351,6 +403,7 @@ header {
 
 
 @media(min-width: 900px) {
+  
   .steps-timeline {
     border-top: 5px double var(--primary-color);
     padding-top: 20px;
@@ -366,6 +419,34 @@ header {
     float: left;
     width: 20%;
     margin-top: -105px;
+  }
+
+  .steps-one:hover{
+    float: left;
+    width: 20%;
+    margin-top: -105px;
+    transform: translateY(-8px);
+  }.steps-two:hover{
+    float: left;
+    width: 20%;
+    margin-top: -105px;
+    transform: translateY(-8px);
+  }.steps-three:hover{
+    float: left;
+    width: 20%;
+    margin-top: -105px;
+    transform: translateY(-8px);
+  }.steps-four:hover{
+    float: left;
+    width: 20%;
+    margin-top: -105px;
+    transform: translateY(-8px);
+  }
+  .steps-five:hover{
+    float: left;
+    width: 20%;
+    margin-top: -105px;
+    transform: translateY(-8px);
   }
   .step-wrap {
     height: 50px;
@@ -411,6 +492,9 @@ header {
   #process .container-fluid {
     width: 50%;
     margin-bottom: 5px;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInLeft 2s ease-out forwards;
   }
   .steps-timeline {
     border-left: 5px double --primary-color;
@@ -424,6 +508,36 @@ header {
   .steps-five {
     margin-left: -25px;
   }
+
+  
+  .steps-one:hover{
+    float: left;
+    width: 20%;
+    margin-top: -105px;
+    transform: translateY(-8px);
+  }.steps-two:hover{
+    float: left;
+    width: 20%;
+    margin-top: -105px;
+    transform: translateY(-8px);
+  }.steps-three:hover{
+    float: left;
+    width: 20%;
+    margin-top: -105px;
+    transform: translateY(-8px);
+  }.steps-four:hover{
+    float: left;
+    width: 20%;
+    margin-top: -105px;
+    transform: translateY(-8px);
+  }
+  .steps-five:hover{
+    float: left;
+    width: 20%;
+    margin-top: -105px;
+    transform: translateY(-8px);
+  }
+
   .step-wrap,
   .steps-stops {
     float: left;
@@ -481,13 +595,73 @@ header {
 
 @media (max-width: 600px) {
   #process .container-fluid {
-    width: 90%;
+    width: 50%;
+    margin-bottom: 5px;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInLeft 2s ease-out forwards;
+  }
+  
+  .steps-one:hover{
+    float: left;
+    width: 20%;
+    margin-top: -105px;
+    transform: translateY(-8px);
+  }.steps-two:hover{
+    float: left;
+    width: 20%;
+    margin-top: -105px;
+    transform: translateY(-8px);
+  }.steps-three:hover{
+    float: left;
+    width: 20%;
+    margin-top: -105px;
+    transform: translateY(-8px);
+  }.steps-four:hover{
+    float: left;
+    width: 20%;
+    margin-top: -105px;
+    transform: translateY(-8px);
+  }
+  .steps-five:hover{
+    float: left;
+    width: 20%;
+    margin-top: -105px;
+    transform: translateY(-8px);
   }
 }
 
 @media (max-width: 400px) {
   .verticle-line {
     width: 105px;
+  }
+  
+  .steps-one:hover{
+    float: left;
+    width: 20%;
+    margin-top: -105px;
+    transform: translateY(-8px);
+  }.steps-two:hover{
+    float: left;
+    width: 20%;
+    margin-top: -105px;
+    transform: translateY(-8px);
+  }.steps-three:hover{
+    float: left;
+    width: 20%;
+    margin-top: -105px;
+    transform: translateY(-8px);
+  }.steps-four:hover{
+    float: left;
+    width: 20%;
+    margin-top: -105px;
+    transform: translateY(-8px);
+  }
+  .steps-five:hover{
+    float: left;
+    width: 20%;
+    margin-top: -105px;
+    transform: translateY(-8px);
   }
 }
 
@@ -556,6 +730,15 @@ header {
   border-radius: 1rem;
   max-height: 800px;
   max-width: 300px;
+  overflow: hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.projects__card:hover {
+  border-radius: 1rem;
+  max-height: 800px;
+  max-width: 300px;
+  transform: translateY(-8px);
   overflow: hidden;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
 }
