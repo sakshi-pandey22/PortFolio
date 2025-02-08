@@ -512,36 +512,6 @@ header {
   .steps-five {
     margin-left: -25px;
   }
-
-  
-  .steps-one:hover{
-    float: left;
-    width: 20%;
-    margin-top: -105px;
-    transform: translateY(-8px);
-  }.steps-two:hover{
-    float: left;
-    width: 20%;
-    margin-top: -105px;
-    transform: translateY(-8px);
-  }.steps-three:hover{
-    float: left;
-    width: 20%;
-    margin-top: -105px;
-    transform: translateY(-8px);
-  }.steps-four:hover{
-    float: left;
-    width: 20%;
-    margin-top: -105px;
-    transform: translateY(-8px);
-  }
-  .steps-five:hover{
-    float: left;
-    width: 20%;
-    margin-top: -105px;
-    transform: translateY(-8px);
-  }
-
   .step-wrap,
   .steps-stops {
     float: left;
