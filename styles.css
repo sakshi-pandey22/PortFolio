@@ -205,7 +205,7 @@ header {
 
 .header__container {
   background-color: var(--secondary-color);
-  min-height: 100vh;
+  padding-bottom: 40vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;  
@@ -476,7 +476,7 @@ header {
 }
 #process {
   background-color: var(--secondary-color); 
-  margin-bottom: 0px;
+  margin-bottom: 30px;
   align-items: center;
   justify-content: space-between;
 
@@ -486,177 +486,9 @@ header {
   margin-bottom: 0px;
 }
 
-.steps-timeline {
-  border-top: 5px double var(--primary-color);
-  padding-top: 20px;
-  margin-top: 40px;
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
-.steps-pane img {
-  height: 100px;
-  object-fit: contain;
-  margin-top: 18px;
-  transform: skewX(-15deg);
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%
-  
-}
-
-.pane-warp {
-  height: 140px;
-  width: 25px;
-  margin-left: 20%;
-  margin-top: 20px;
-  transform: skewX(15deg);
-  
-}
-
-.steps-pane {
-  height: 140px;
-  width: 140px;
-  object-fit: contain;
-  margin-left: 30px;
-  box-shadow: 7px 0px 5px #bcbcbc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden
-}
-
-.inverted-pane-warp {
-  color: var(--text-color);
-  height: 140px;
-  width: 25px;
-  margin-left: 20%;
-  transform: skewX(-15deg);
-  
-}
-
-.inverted-steps-pane {
-  height: 140px;
-  width: 140px;
-  background: var(--primary-color);
-  margin-left: 30px;
-  box-shadow: 7px 5px 5px 5px #bcbcbc;
-}
-
-.inverted-steps-pane p {
-  transform: skewX(15deg);
-  padding: 20px 10px 10px 10px;
-}
-
-.steps-timeline {
-  border-top: 5px double --btn-primary-color;
-  padding-top: 20px;
-  margin-top: 40px;
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
-@media(min-width: 900px) {
-  
-  .steps-timeline {
-    border-top: 5px double var(--primary-color);
-    padding-top: 20px;
-    margin-top: 40px;
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-  .steps-one,
-  .steps-two,
-  .steps-three,
-  .steps-four,
-  .steps-five {
-    float: left;
-    width: 20%;
-    margin-top: -105px;
-  }
-
-  .steps-one:hover{
-    float: left;
-    width: 20%;
-    margin-top: -105px;
-    transform: translateY(-8px);
-  }.steps-two:hover{
-    float: left;
-    width: 20%;
-    margin-top: -105px;
-    transform: translateY(-8px);
-  }.steps-three:hover{
-    float: left;
-    width: 20%;
-    margin-top: -105px;
-    transform: translateY(-8px);
-  }.steps-four:hover{
-    float: left;
-    width: 20%;
-    margin-top: -105px;
-    transform: translateY(-8px);
-  }
-  .steps-five:hover{
-    float: left;
-    width: 20%;
-    margin-top: -105px;
-    transform: translateY(-8px);
-  }
-  .step-wrap {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background: transparent;
-    margin-left: 39%;
-    border: 2px solid --primary-color;
-  }
-  .verticle-line {
-    position: absolute;
-    height: 57px;
-    width: 5px;
-    margin-left: 10px;
-    margin-top: 10px;
-  }
-  .steps-stops {
-    height: 25px;
-    width: 25px;
-    margin: 11px 10.1px;
-    border-radius: 50%;
-    background: var(--primary-color);
-  }
-  .end-circle {
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    position: absolute;
-    margin-top: 19px;
-    margin-left: -10px;
-  }
-  .inverted-end-circle {
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    position: absolute;
-    margin-top: 19px;
-    margin-left: 18.1%;
-  }
-}
-
-
-@media (max-width: 600px) {
-  #process .container-fluid {
-    width: 50%;
-    margin-bottom: 5px;
-    opacity: 0;
-    transform: translateX(-100%);
-    animation: slideInLeft 2s ease-out forwards;
-  }
-}
 
 @media (max-width: 400px) {
-  .verticle-line {
-    width: 105px;
-  }
+  
 
   .footer{
     align-items: center;
@@ -731,15 +563,6 @@ header {
 } */
 
 
-
-
-.back-orange {
-  background: var(--btn-primary-color);
-}
-
-.back-blue {
-  background: var(--btn-primary-color);
-}
 .portfolio__card img {
   border-radius: 1rem;
 }
@@ -1137,10 +960,11 @@ header {
 
 .footer__col img {
   filter: brightness(0) invert(1);
-  width: 20px; /* Set icon size */
+  width: 20sspx; /* Set icon size */
   height: 20px;
   vertical-align: middle;
   margin-left: 55px;
+  background-color: var(--primary-color-dark);
 }
 
 .footer__col a {
