@@ -960,7 +960,7 @@ header {
 
 .footer__col img {
   filter: brightness(0) invert(1);
-  width: 20sspx; /* Set icon size */
+  width: 20px; 
   height: 20px;
   vertical-align: middle;
   margin-left: 55px;
