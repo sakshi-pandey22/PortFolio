@@ -9,16 +9,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    
+    <link rel="stylesheet" href="canvas.css">
     <link class="icon" rel="icon" type="image/jpg" href="header-1.jpg" />
 
     <title>_Pratik_Anand</title>
     
   </head>
   <body>
+
+    <canvas id="backgroundCanvas"></canvas>
+    <span class="canvas-instruction"></span>  
     
     <nav>
-      <div class="nav__logo">Welcome!<span></span></div>
+      <div class="nav__logo">! Welcome<span></span></div>
       <ul class="nav__links">
         <li class="link"><a href="#nav__links">Home</a></li>
         <li class="link"><a href="#process">Experiences</a></li>
@@ -27,7 +30,11 @@
         <li class="link"><a href="#reviewd">Feedback</a></li>
       </ul>
       <button class="btn"><a href="#contactd" style="padding: 3px;">Contact</a></button>
+      
+      <!-- Theme Toggle Button -->
+      <button id="theme-toggle" class="theme-btn">🌙</button>
     </nav>
+    
     <header>
       <div class="section__container header__container" >
         <div class="header__image">
@@ -62,6 +69,74 @@
         <p class="section__subtitle">
           "Check out my experiences, where I’ve worked on innovative solutions, collaborated with talented teams, and applied my skills in AI, machine learning, and web development to solve real-world challenges. 🚀💡"</p>
       </div></center><br><br><br><br><br>
+      <div class="timeline" style="align-items: center;">
+        <div class="timeline-content">
+          <div class="timeline-period">1998 - 2000</div>
+          <div class="portfolio__card1">
+            <img src="sih.webp" alt="Smart India Hackathon" />
+            <div class="portfolio__details1">
+              <p class="portfolio__subtitle1">Smart India Hackathon</p>
+              <p class="portfolio__title1">Developed a tech solution for a real-world problem, collaborating under tight deadlines and expert guidance.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-content">
+          <div class="timeline-period">1998 - 2000</div>
+          <div class="portfolio__card1">
+            <img src="datasci.webp" alt="Data Science Hackathon" />
+            <div class="portfolio__details1">
+              <p class="portfolio__subtitle1">DSC Hackathon</p>
+              <p class="portfolio__title1">Applied ML techniques to analyze datasets, building predictive models using Python and TensorFlow.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-content">
+          <div class="timeline-period">1998 - 2000</div>
+          <div class="portfolio__card1">
+            <img src="ctf.webp" alt="CTF Event" />
+            <div class="portfolio__details1">
+              <p class="portfolio__subtitle1">Capture the Flag (CTF) Event</p>
+              <p class="portfolio__title1">Solved cryptography, reverse engineering, and web exploitation challenges, improving ethical hacking skills.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-content">
+          <div class="timeline-period">1998 - 2000</div>
+          <div class="portfolio__card1">
+            <img src="sap.webp" alt="SAP Hackathon" />
+            <div class="portfolio__details1">
+              <p class="portfolio__subtitle1">SAP Hackathon</p>
+              <p class="portfolio__title1">Built enterprise solutions optimizing business processes, gaining hands-on experience with SAP technologies.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-content">
+          <div class="timeline-period">1998 - 2000</div>
+          <div class="portfolio__card1">
+            <img src="nexathon.webp" alt="Nexathon" />
+            <div class="portfolio__details1">
+              <p class="portfolio__subtitle1">Nexathon</p>
+              <p class="portfolio__title1">Developed REDACT, an ML-powered system for secure and automated text redaction using NLP.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-content">
+          <div class="timeline-period">1998 - 2000</div>
+          <div class="portfolio__card1">
+            <img src="aws.webp" alt="New Hackathon" />
+            <div class="portfolio__details1">
+              <p class="portfolio__subtitle1">AWS Hackathon</p>
+              <p class="portfolio__title1">Worked on an innovative tech solution, enhancing problem-solving and collaboration skills under tight deadlines.</p>
+            </div>
+          </div>
+        </div>
+        
+      <!-- 
       <div class="container-fluid">
         <div class="row">
           <div class="steps-timeline text-center">
@@ -85,6 +160,7 @@
                     <h3 style="font-size: 2ch;color: rgb(115, 111, 111);">VIT Smart India</h3>
                     <li>Role: Team Lead</li>
                     <li>Position: Top 50 team</li>
+                    <li></li>
                   </ul>
                 </div>
               </div>
@@ -108,6 +184,8 @@
                     <h3 style="font-size: 2ch;color: rgb(115, 111, 111);">DSC Devfolio</h3>
                     <li>Role: Developer</li>
                     <li>Position: Top 15 Finalist</li>
+                    <li></li>
+                    <li></li>
                   </ul>
                 </div>
               </div>
@@ -131,6 +209,9 @@
                     <h3 style="font-size: 2ch;color: rgb(115, 111, 111);">SAP</h3>
                     <li>Role: AI Specialist</li>
                     <li>Position: Top 50 team</li>
+                    <li></li>
+                    <li></li>
+
                   </ul>
                 </div>
               </div>
@@ -154,6 +235,8 @@
                     <h3 style="font-size: 2ch;color: rgb(115, 111, 111);">CTF</h3>
                     <li>Role: Team Lead</li>
                     <li>Position: 2nd Runner-Up</li>
+                    <li></li>
+                    <li></li>
                   </ul>
                 </div>
               </div>
@@ -178,6 +261,7 @@
                     <h3 style="font-size: 2ch;color: rgb(115, 111, 111);">Nexathon</h3>
                     <li>Role: Full-stack Developer</li>
                     <li>Position: Semi-finalist</li>
+                    <li></li>
                   </ul>
                 </div>
               </div>
@@ -185,7 +269,7 @@
     
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
     
       
@@ -249,76 +333,78 @@
 
     
     <section class="section__container" id="skilld">
-      <div class="section__header">
-        <div><center>
-          <h2 class="section__title" >Skills</h2>
-          <p class="section__subtitle">
-            A versatile set of technical skills empowers me to create innovative solutions. From crafting responsive user interfaces to training AI models, I have the expertise to turn complex challenges into seamless experiences. Explore the capabilities that define my work.🚀💡
-          </p>
-        </div></center>
-        <div class="portfolio__nav">
-          <span><i class="ri-arrow-left-s-line"></i></span>
-          <span><i class="ri-arrow-right-s-line"></i></span>
-        </div>
-      </div>
-      <div class="portfolio__grid">
-        <div class="portfolio__card1">
-          <img src="skill1.webp" alt="portfolio" />
-          <div class="portfolio__details1">
-            <p class="portfolio__subtitle1">Programming Languages</p>
-            <p class="portfolio__title1">Proficient in Python, JavaScript, and C++ for building scalable and efficient applications.</p>
-          </div>
-        </div>
-        <div class="portfolio__card1">
-          <img src="skillwd (1).webp" alt="portfolio" />
-          <div class="portfolio__details1">
-            <p class="portfolio__subtitle1">Web Development</p>
-            <p class="portfolio__title1">Experienced in creating responsive and dynamic web interfaces using React, HTML, CSS, and Node.js.
-
+      <div class="skill-box">  
+        <div class="section__header">
+          <div><center>
+            <h2 class="section__title" >Skills</h2>
+            <p class="section__subtitle">
+              A versatile set of technical skills empowers me to create innovative solutions. From crafting responsive user interfaces to training AI models, I have the expertise to turn complex challenges into seamless experiences. Explore the capabilities that define my work.🚀💡
             </p>
+          </div></center>
+          <div class="portfolio__nav">
+            <span><i class="ri-arrow-left-s-line"></i></span>
+            <span><i class="ri-arrow-right-s-line"></i></span>
           </div>
         </div>
-        <div class="portfolio__card1">
-          <img src="skillgt.webp" alt="portfolio" />
-          <div class="portfolio__details1">
-            <p class="portfolio__subtitle1">Version Control</p>
-            <p class="portfolio__title1">Skilled in using Git and GitHub for collaborative software development and version management.</p>
+        <div class="portfolio__grid">
+          <div class="portfolio__card1">
+            <img src="skill1.webp" alt="portfolio" />
+            <div class="portfolio__details1">
+              <p class="portfolio__subtitle1">Programming Languages</p>
+              <p class="portfolio__title1">Proficient in Python, JavaScript, and C++ for building scalable and efficient applications.</p>
+            </div>
           </div>
-        </div>
-        
-        <div class="portfolio__card1">
-          <img src="skilldb.webp" alt="portfolio" />
-          <div class="portfolio__details1">
-            <p class="portfolio__subtitle1">Database Management</p>
-            <p class="portfolio__title1">Knowledgeable in working with MySQL and MongoDB to design and manage structured and unstructured data.</p>
+          <div class="portfolio__card1">
+            <img src="skillwd (1).webp" alt="portfolio" />
+            <div class="portfolio__details1">
+              <p class="portfolio__subtitle1">Web Development</p>
+              <p class="portfolio__title1">Experienced in creating responsive and dynamic web interfaces using React, HTML, CSS, and Node.js.
+
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="portfolio__card1">
-          <img src="skillap.webp" alt="portfolio" />
-          <div class="portfolio__details1">
-            <p class="portfolio__subtitle1">API Integration</p>
-            <p class="portfolio__title1">Expertise in designing and consuming RESTful APIs for seamless communication between software components.</p>
+          <div class="portfolio__card1">
+            <img src="skillgt.webp" alt="portfolio" />
+            <div class="portfolio__details1">
+              <p class="portfolio__subtitle1">Version Control</p>
+              <p class="portfolio__title1">Skilled in using Git and GitHub for collaborative software development and version management.</p>
+            </div>
           </div>
-        </div>
-        <div class="portfolio__card1">
-          <img src="skillml.webp" alt="portfolio" />
-          <div class="portfolio__details1">
-            <p class="portfolio__subtitle1">Machine Learning and AI</p>
-            <p class="portfolio__title1">Hands-on experience in training computer vision models using TensorFlow and OpenCV for real-world applications.</p>
+          
+          <div class="portfolio__card1">
+            <img src="skilldb.webp" alt="portfolio" />
+            <div class="portfolio__details1">
+              <p class="portfolio__subtitle1">Database Management</p>
+              <p class="portfolio__title1">Knowledgeable in working with MySQL and MongoDB to design and manage structured and unstructured data.</p>
+            </div>
           </div>
-        </div>
-        <div class="portfolio__card1">
-          <img src="skillag.webp" alt="portfolio" />
-          <div class="portfolio__details1">
-            <p class="portfolio__subtitle1">Problem-Solving and Algorithms</p>
-            <p class="portfolio__title1">Strong foundation in data structures and algorithms for optimizing solutions to complex challenges.</p>
+          <div class="portfolio__card1">
+            <img src="skillap.webp" alt="portfolio" />
+            <div class="portfolio__details1">
+              <p class="portfolio__subtitle1">API Integration</p>
+              <p class="portfolio__title1">Expertise in designing and consuming RESTful APIs for seamless communication between software components.</p>
+            </div>
           </div>
-        </div>
-        <div class="portfolio__card1">
-          <img src="skilltb.webp" alt="portfolio" />
-          <div class="portfolio__details1">
-            <p class="portfolio__subtitle1">Testing and Debugging</p>
-            <p class="portfolio__title1">Adept at using tools like Jest and Postman for ensuring software quality and debugging efficiently.</p>
+          <div class="portfolio__card1">
+            <img src="skillml.webp" alt="portfolio" />
+            <div class="portfolio__details1">
+              <p class="portfolio__subtitle1">Machine Learning and AI</p>
+              <p class="portfolio__title1">Hands-on experience in training computer vision models using TensorFlow and OpenCV for real-world applications.</p>
+            </div>
+          </div>
+          <div class="portfolio__card1">
+            <img src="skillag.webp" alt="portfolio" />
+            <div class="portfolio__details1">
+              <p class="portfolio__subtitle1">Problem-Solving and Algorithms</p>
+              <p class="portfolio__title1">Strong foundation in data structures and algorithms for optimizing solutions to complex challenges.</p>
+            </div>
+          </div>
+          <div class="portfolio__card1">
+            <img src="skilltb.webp" alt="portfolio" />
+            <div class="portfolio__details1">
+              <p class="portfolio__subtitle1">Testing and Debugging</p>
+              <p class="portfolio__title1">Adept at using tools like Jest and Postman for ensuring software quality and debugging efficiently.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -369,7 +455,121 @@
       </div>
     </section>
 
-    <footer class="footer" id="contactd">
+    <!-- <section class="content-section" id="skillspl">
+      <div id="skills-container"><div class="skills-slider">
+          <div class="skills-track">
+              <img src="assets/icons/bash.svg" alt="Bash">
+              <img src="assets/icons/c.svg" alt="C">
+              <img src="assets/icons/cpp.svg" alt="C++">
+              <img src="assets/icons/css.svg" alt="CSS">
+              <img src="assets/icons/django.svg" alt="Django">
+              <img src="assets/icons/flask.svg" alt="Flask">
+              <img src="assets/icons/github.svg" alt="GitHub">
+              <img src="assets/icons/html.svg" alt="HTML">
+              <img src="assets/icons/java.svg" alt="Java">
+              <img src="assets/icons/js.svg" alt="JavaScript">
+              <img src="assets/icons/linux.svg" alt="Linux">
+              <img src="assets/icons/python.svg" alt="Python">
+              <img src="assets/icons/react.svg" alt="React">
+              <img src="assets/icons/vscode.svg" alt="VS Code">
+              
+              <img src="assets/icons/bash.svg" alt="Bash">
+              <img src="assets/icons/c.svg" alt="C">
+              <img src="assets/icons/cpp.svg" alt="C++">
+              <img src="assets/icons/css.svg" alt="CSS">
+              <img src="assets/icons/django.svg" alt="Django">
+              <img src="assets/icons/flask.svg" alt="Flask">
+              <img src="assets/icons/github.svg" alt="GitHub">
+              <img src="assets/icons/html.svg" alt="HTML">
+              <img src="assets/icons/java.svg" alt="Java">
+              <img src="assets/icons/js.svg" alt="JavaScript">
+              <img src="assets/icons/linux.svg" alt="Linux">
+              <img src="assets/icons/python.svg" alt="Python">
+              <img src="assets/icons/react.svg" alt="React">
+              <img src="assets/icons/vscode.svg" alt="VS Code">
+          
+              <img src="assets/icons/bash.svg" alt="Bash">
+              <img src="assets/icons/c.svg" alt="C">
+              <img src="assets/icons/cpp.svg" alt="C++">
+              <img src="assets/icons/css.svg" alt="CSS">
+              <img src="assets/icons/django.svg" alt="Django">
+              <img src="assets/icons/flask.svg" alt="Flask">
+              <img src="assets/icons/github.svg" alt="GitHub">
+              <img src="assets/icons/html.svg" alt="HTML">
+              <img src="assets/icons/java.svg" alt="Java">
+              <img src="assets/icons/js.svg" alt="JavaScript">
+              <img src="assets/icons/linux.svg" alt="Linux">
+              <img src="assets/icons/python.svg" alt="Python">
+              <img src="assets/icons/react.svg" alt="React">
+              <img src="assets/icons/vscode.svg" alt="VS Code">
+
+              <img src="assets/icons/bash.svg" alt="Bash">
+              <img src="assets/icons/c.svg" alt="C">
+              <img src="assets/icons/cpp.svg" alt="C++">
+              <img src="assets/icons/css.svg" alt="CSS">
+              <img src="assets/icons/django.svg" alt="Django">
+              <img src="assets/icons/flask.svg" alt="Flask">
+              <img src="assets/icons/github.svg" alt="GitHub">
+              <img src="assets/icons/html.svg" alt="HTML">
+              <img src="assets/icons/java.svg" alt="Java">
+              <img src="assets/icons/js.svg" alt="JavaScript">
+              <img src="assets/icons/linux.svg" alt="Linux">
+              <img src="assets/icons/python.svg" alt="Python">
+              <img src="assets/icons/react.svg" alt="React">
+              <img src="assets/icons/vscode.svg" alt="VS Code">
+
+              <img src="assets/icons/bash.svg" alt="Bash">
+              <img src="assets/icons/c.svg" alt="C">
+              <img src="assets/icons/cpp.svg" alt="C++">
+              <img src="assets/icons/css.svg" alt="CSS">
+              <img src="assets/icons/django.svg" alt="Django">
+              <img src="assets/icons/flask.svg" alt="Flask">
+              <img src="assets/icons/github.svg" alt="GitHub">
+              <img src="assets/icons/html.svg" alt="HTML">
+              <img src="assets/icons/java.svg" alt="Java">
+              <img src="assets/icons/js.svg" alt="JavaScript">
+              <img src="assets/icons/linux.svg" alt="Linux">
+              <img src="assets/icons/python.svg" alt="Python">
+              <img src="assets/icons/react.svg" alt="React">
+              <img src="assets/icons/vscode.svg" alt="VS Code">
+
+              <img src="assets/icons/bash.svg" alt="Bash">
+              <img src="assets/icons/c.svg" alt="C">
+              <img src="assets/icons/cpp.svg" alt="C++">
+              <img src="assets/icons/css.svg" alt="CSS">
+              <img src="assets/icons/django.svg" alt="Django">
+              <img src="assets/icons/flask.svg" alt="Flask">
+              <img src="assets/icons/github.svg" alt="GitHub">
+              <img src="assets/icons/html.svg" alt="HTML">
+              <img src="assets/icons/java.svg" alt="Java">
+              <img src="assets/icons/js.svg" alt="JavaScript">
+              <img src="assets/icons/linux.svg" alt="Linux">
+              <img src="assets/icons/python.svg" alt="Python">
+              <img src="assets/icons/react.svg" alt="React">
+              <img src="assets/icons/vscode.svg" alt="VS Code">
+
+
+              <img src="assets/icons/bash.svg" alt="Bash">
+              <img src="assets/icons/c.svg" alt="C">
+              <img src="assets/icons/cpp.svg" alt="C++">
+              <img src="assets/icons/css.svg" alt="CSS">
+              <img src="assets/icons/django.svg" alt="Django">
+              <img src="assets/icons/flask.svg" alt="Flask">
+              <img src="assets/icons/github.svg" alt="GitHub">
+              <img src="assets/icons/html.svg" alt="HTML">
+              <img src="assets/icons/java.svg" alt="Java">
+              <img src="assets/icons/js.svg" alt="JavaScript">
+              <img src="assets/icons/linux.svg" alt="Linux">
+              <img src="assets/icons/python.svg" alt="Python">
+              <img src="assets/icons/react.svg" alt="React">
+              <img src="assets/icons/vscode.svg" alt="VS Code">
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+    <footer class="footer" id="contactd" >
       <div class="section__container footer__container">
         <div class="footer__col">
           <h3>Thanks for stopping by!<span>.</span></h3>
@@ -383,21 +583,22 @@
              <br />Until next time, happy coding! 💻✨
           </p>
         </div>
-        <div class="footer__col" style="color: white;">
+        <div class="footer__col">
           <h4>Socials</h4>
           <br />
-          <p><a href="https://www.linkedin.com/in/introducingpratikanand/" >LinkedIN</a></p>
-          <p><a href="https://github.com/user-pratik/" >GitHub</a></p>
-          <p><a href="https://www.instagram.com/pratik_yash/">Instagram</a></p>
-          <p><a href="https://x.com/_Pratik_Anand" >X.com</a></p>
+          <p><img src="assets/icons/linkedin.svg" alt="linkedin"><a href="https://www.linkedin.com/in/introducingpratikanand/">LinkedIn</a></p>
+          <p><img src="assets/icons/github.svg" alt="GitHub"><a href="https://github.com/user-pratik/">GitHub</a></p>
+          <p><img src="assets/icons/ig.svg" alt="Instagram"><a href="https://www.instagram.com/pratik_yash/">Instagram</a></p>
+          <p><img src="assets/icons/x.svg" alt="X"><a href="https://x.com/_Pratik_Anand">X.com</a></p>
         </div>
+        
         <div class="footer__col">
-          <h4>Address</h4>
+          <h4>Contacts</h4>
           <p>
-            <span>Address:</span> Ambika Vihar Colony, Lane no. 1, Bela(Zip - 842002), Muzaffarpur, <br />Bihar, India
+            <span>Address:</span> Ambika Vihar Colony, Lane no. 1, Bela<br>(Zip - 842002), Muzaffarpur, <br />Bihar, India
           </p>
           <p><span>Email:</span> pratik.csdev@gmail.com</p>
-          <p><span>Phone:</span> +91 7903956084</p>
+          <p><span>Phone:</span> +91-7903956084</p>
         </div>
       </div>
       
