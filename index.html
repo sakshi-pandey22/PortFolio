@@ -8,9 +8,39 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="canvas.css">
-    <link class="icon" rel="icon" type="image/jpg" href="header-1.jpg" />
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1, // Default for small screens
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+    <link class="icon" rel="icon" type="image/jpg" href="header-1.webp" />
 
     <title>_Pratik_Anand</title>
     
@@ -30,7 +60,7 @@
         <li class="link"><a href="#reviewd">Feedback</a></li>
       </ul>
       <right>
-      <button id="theme-toggle" class="theme-btn">🌙</button>
+      <button id="theme-toggle" class="theme-btn">☀️</button>
       <button class="btn"><a href="#contactd" style="padding: 3px;">Contact</a></button>
       </right>
     </nav>
@@ -70,19 +100,9 @@
           "Check out my experiences, where I’ve worked on innovative solutions, collaborated with talented teams, and applied my skills in AI, machine learning, and web development to solve real-world challenges. 🚀💡"</p>
       </div></center><br><br><br><br><br>
       <div class="timeline" style="align-items: center;">
-        <div class="timeline-content">
-          <div class="timeline-period">1998 - 2000</div>
-          <div class="portfolio__card1">
-            <img src="sih.webp" alt="Smart India Hackathon" />
-            <div class="portfolio__details1">
-              <p class="portfolio__subtitle1">Smart India Hackathon</p>
-              <p class="portfolio__title1">Developed a tech solution for a real-world problem, collaborating under tight deadlines and expert guidance.</p>
-            </div>
-          </div>
-        </div>
         
         <div class="timeline-content">
-          <div class="timeline-period">1998 - 2000</div>
+          <div class="timeline-period">September 2023</div>
           <div class="portfolio__card1">
             <img src="datasci.webp" alt="Data Science Hackathon" />
             <div class="portfolio__details1">
@@ -93,7 +113,7 @@
         </div>
         
         <div class="timeline-content">
-          <div class="timeline-period">1998 - 2000</div>
+          <div class="timeline-period">january 2024</div>
           <div class="portfolio__card1">
             <img src="ctf.webp" alt="CTF Event" />
             <div class="portfolio__details1">
@@ -102,9 +122,19 @@
             </div>
           </div>
         </div>
+        <div class="timeline-content">
+          <div class="timeline-period">December 2024</div>
+          <div class="portfolio__card1">
+            <img src="sih.webp" alt="Smart India Hackathon" />
+            <div class="portfolio__details1">
+              <p class="portfolio__subtitle1">VIT Smart India Hackathon</p>
+              <p class="portfolio__title1">Developed a tech solution for a real-world problem, collaborating under tight deadlines and expert guidance.</p>
+            </div>
+          </div>
+        </div>
         
         <div class="timeline-content">
-          <div class="timeline-period">1998 - 2000</div>
+          <div class="timeline-period">May 2024</div>
           <div class="portfolio__card1">
             <img src="sap.webp" alt="SAP Hackathon" />
             <div class="portfolio__details1">
@@ -115,7 +145,7 @@
         </div>
         
         <div class="timeline-content">
-          <div class="timeline-period">1998 - 2000</div>
+          <div class="timeline-period">Febreuary 2025</div>
           <div class="portfolio__card1">
             <img src="nexathon.webp" alt="Nexathon" />
             <div class="portfolio__details1">
@@ -126,7 +156,7 @@
         </div>
 
         <div class="timeline-content">
-          <div class="timeline-period">1998 - 2000</div>
+          <div class="timeline-period">March 2025</div>
           <div class="portfolio__card1">
             <img src="aws.webp" alt="New Hackathon" />
             <div class="portfolio__details1">
@@ -146,45 +176,82 @@
            Discover how I combine creativity and technical expertise to build innovative solutions! My portfolio showcases projects that turn ideas into reality. 🚀✨
         </p>
         <div class="projects__grid">
-          <div class="projects__card">
-            <img src="project-1.webp" alt="Aggression Detection System Using AI" />
+          <!-- Project 1: Redact -->
+          <div class="projects__card" style="border-radius: 2rem;">
+            <img src="RE-dact.png" alt="Redact Project" />
             <div class="projects__details">
-              <p class="projects__title">Object detection System Using AI</p>
+              <p class="projects__title">Redact</p>
               <p class="projects__description">
-                Developed a computer vision model that detects aggressive behavior using a webcam feed, providing object and gender classification.
+                Worked with a team to develop a redaction tool to automatically redact any and all sensitive information using a wide variety of technologies from machine learning to OCR such as training and using custom trained model for signature and license plate detection.
               </p>
               <div class="rating">Difficulty - <i class="ri-star-fill"></i> 4.8</div>
               <div class="projects__price">
-                <div class="price">Technologies: Python, TensorFlow, OpenCV</div>
-                <button class="view__project">View Project</button>
+                <div class="price">Technologies: Python, Html, CSS, JS, ML</div>
+                <button class="btn">View Project</button>
               </div>
             </div>
           </div>
-          <div class="projects__card">
-            <img src="project-2.webp" alt="Real-Time Chat Application" />
+        
+          <!-- Project 2: Women Safety in high risk areas using object detection -->
+          <div class="projects__card" style="border-radius: 2rem;">
+            <img src="women.png" alt="Women Safety Project" />
             <div class="projects__details">
-              <p class="projects__title">Real-Time Chat Application</p>
+              <p class="projects__title">Women Safety in high risk areas using object detection</p>
               <p class="projects__description">
-                Developed a real-time chat application with user authentication and dynamic messaging using WebSocket technology.
+                Worked with a team to implement object detection model to identify female and male demographic in a live feed along with other data and Change alert status accordingly.
               </p>
-              <div class="rating">Difficulty - <i class="ri-star-fill"></i> 4.6</div>
+              <div class="rating">Difficulty - <i class="ri-star-fill"></i> 4.8</div>
               <div class="projects__price">
-                <div class="price">Technologies: Node.js, Socket.io, MongoDB</div>
-                <button class="view__project">View Project</button>
+                <div class="price">Technologies: Python, Html, JS, CSS, ML</div>
+                <button class="btn">View Project</button>
               </div>
             </div>
           </div>
-          <div class="projects__card">
-            <img src="project-3.webp" alt="Personal Portfolio Website" />
+        
+          <!-- Project 3: SolomonTheWise -->
+          <div class="projects__card" style="border-radius: 2rem;">
+            <img src="smw.png" alt="SolomonTheWise Project" />
             <div class="projects__details">
-              <p class="projects__title">Personal Portfolio Website</p>
+              <p class="projects__title">SolomonTheWise</p>
               <p class="projects__description">
-                Built a responsive portfolio website showcasing my projects, skills, and experiences with a modern design.
+                Use React and Express.js to create and deploy a fun game where system creates a word and player can ask different questions to try and guess what the initial word was.
               </p>
-              <div class="rating">Difficulty - <i class="ri-star-fill"></i> 4.7</div>
+              <div class="rating">Difficulty - <i class="ri-star-fill"></i> 4.8</div>
               <div class="projects__price">
-                <div class="price">Technologies: React, HTML, CSS, JavaScript</div>
-                <button class="view__project">View Project</button>
+                <div class="price">Technologies: React, Node.js, Express.js, API integration</div>
+                <button class="btn">View Project</button>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Project 4: Service app -->
+          <div class="projects__card" style="border-radius: 2rem;">
+            <img src="service.png" alt="Service App Project" />
+            <div class="projects__details">
+              <p class="projects__title">Service app</p>
+              <p class="projects__description">
+                Used react framework to create a service app where people can post and find services and connect and conduct payment to the interested party.
+              </p>
+              <div class="rating">Difficulty - <i class="ri-star-fill"></i> 4.8</div>
+              <div class="projects__price">
+                <div class="price">Technologies: React, Supabase, Node.js</div>
+                <button class="btn">View Project</button>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Project 5: AIRC - Air intelligence and Refreshing Control -->
+          <div class="projects__card" style="border-radius: 2rem;">
+            <img src="Airc.png" alt="AIRC Project" />
+            <div class="projects__details">
+              <p class="projects__title">AIRC - Air intelligence and Refreshing Control</p>
+              <p class="projects__description">
+                Used sensors and ESP module to take environmental input and transmit it to the system that then processes and adjusts appliances for optimal comfort and efficiency. As well as display the data on an app.
+              </p>
+              <div class="rating">Difficulty - <i class="ri-star-fill"></i> 4.8</div>
+              <div class="projects__price">
+                <div class="price">Technologies: Dart, Python, Flutter, Arduino ide, Flask</div>
+                <button class="btn">View Project</button>
               </div>
             </div>
           </div>
@@ -313,7 +380,7 @@
         </div>
         <div class="feedback__form">
           <form>
-            <input type="text" placeholder="Your feedback here" />
+            <input type="text" placeholder="Your feedback here" style="background-color: var(--clr);" />
             <button class="btn" type="submit"><a href="thanks.html">Send</a></button>
           </form>
         </div>
@@ -468,6 +535,7 @@
       </div>
       
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="scripts.js" defer></script>
   </body>
 </html>
