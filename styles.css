@@ -146,7 +146,7 @@ html {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 10vh;
-
+  width: 100%;
 }
 
 #process .section-heading {
@@ -176,6 +176,7 @@ html {
 
 #skilld {
   background-color: var(--extra-light);
+  width: 100%;
 }
 
 .section__container {
