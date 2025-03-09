@@ -11,7 +11,7 @@ html {
   --btn-primary-color: #867f7f;
   --primary-color: #000000;
   --primary-color-dark: #3c3c3c;
-  --secondary-color: rgb(7, 7, 7);
+  --secondary-color: rgb(0, 0, 0);
   --text-dark: #f6f8fa;
   --text-light: #93dafb;
   --extra-light: #000000;
@@ -45,7 +45,8 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color); 
+  scrollbar-width: none;
 }
 
 #theme-toggle {
@@ -306,6 +307,7 @@ nav {
 
 header {
   background-color: var(--secondary-color);
+  padding-top: 100px;
 }
 
 .header__container {
@@ -541,7 +543,7 @@ header {
 
 .projects__card {
   flex: 0 0 18.75rem;
-  /* Add any existing styles here if applicable */
+  background: #3c3c3c;
 }
 .projects__card {
   border-radius: 2rem;
@@ -1111,3 +1113,12 @@ __grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }  
+.dark-mode .footer__col img {
+  filter: brightness(100) invert(1);
+}
+.footer__col img {
+  filter: brightness(57) invert(0);
+}
+.root .footer__col img {
+  filter: brightness(100) invert(1);
+}
