@@ -346,7 +346,7 @@ header {
 }
 
 .header__content {
-  text-align: left;
+  text-align: justify;
   display: flex;
   align-items: center;
   justify-content: center;
