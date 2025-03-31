@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🟡YOUR_NAME🟡 Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        :root {
+            --primary-color: #2ecc71;
+            --secondary-color: #27ae60;
+            --dark-bg: #2c3e50;
+            --light-bg: #ecf0f1;
+            --text-dark: #2c3e50;
+            --text-light: #ecf0f1;
+        }
+
+        .nav__logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .nav__links .link a {
+            position: relative;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav__links .link a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav__links .link a:hover::after {
+            width: 100%;
+        }
+
+        /* Animated Header */
+        .header__container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header__image img {
+            transition: transform 0.5s ease;
+        }
+
+        .header__image:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Enhanced Project Cards */
+        .projects__card {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .projects__card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .projects__card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .projects__card:hover::before {
+            opacity: 0.1;
+        }
+
+        /* Interactive Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Add more custom styles as needed */
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav__logo">🟡YOUR_LOGO_TEXT🟡</div>
+        <ul class="nav__links">
+            <li class="link"><a href="#home">Home</a></li>
+            <li class="link"><a href="#projects">Projects</a></li>
+            <li class="link"><a href="#skills">Skills</a></li>
+            <li class="link"><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="theme-controls">
+            <button class="theme-toggle">🌓</button>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="header__container">
+            <div class="header__content">
+                <h1>🟡YOUR_NAME🟡</h1>
+                <p class="subtitle">🟡YOUR_TITLE🟡</p>
+                <p class="description">
+                    🟡YOUR INTRODUCTION TEXT🟡
+                </p>
+            </div>
+            <div class="header__image">
+                <img src="🟡your-image-1.jpg🟡" alt="Profile">
+            </div>
+        </div>
+    </header>
+
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects__grid">
+            
+            <!-- Project 1 -->
+            <div class="projects__card">
+                <div class="project__image">
+                    <img src="🟡project1.jpg🟡" alt="Project 1">
+                </div>
+                <div class="project__info">
+                    <h3>🟡Project Title 1🟡</h3>
+                    <p>🟡Project Description🟡</p>
+                    <div class="tech-stack">
+                        <span>🟡Tech 1🟡</span>
+                        <span>🟡Tech 2🟡</span>
+                        <span>🟡Tech 3🟡</span>
+                    </div>
+                    <div class="project__links">
+                        <a href="🟡#🟡" class="btn">Demo</a>
+                        <a href="🟡#🟡" class="btn">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat for other projects -->
+            
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            
+            <!-- Skill 1 -->
+            <div class="skill-card">
+                <div class="skill__icon">
+                    <i class="ri-code-line"></i>
+                </div>
+                <h3>🟡Skill Category🟡</h3>
+                <ul class="skill__list">
+                    <li>🟡Skill 1🟡</li>
+                    <li>🟡Skill 2🟡</li>
+                    <li>🟡Skill 3🟡</li>
+                </ul>
+            </div>
+
+            <!-- Repeat for other skill categories -->
+            
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="contact__info">
+            <h3>Let's Connect</h3>
+            <div class="social__links">
+                <a href="🟡LINKEDIN_URL🟡"><i class="ri-linkedin-fill"></i></a>
+                <a href="🟡GITHUB_URL🟡"><i class="ri-github-fill"></i></a>
+                <a href="🟡TWITTER_URL🟡"><i class="ri-twitter-fill"></i></a>
+            </div>
+            <p>🟡EMAIL_ADDRESS🟡</p>
+        </div>
+    </footer>
+
+    <script>
+        // Interactive Theme Toggle
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            themeToggle.textContent = body.classList.contains('dark-theme') ? '🌞' : '🌙';
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add more interactive features as needed
+    </script>
+</body>
+</html>
