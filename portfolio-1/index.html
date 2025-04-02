@@ -8,46 +8,19 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="canvas.css">
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 1, 
-        spaceBetween: 10,
-        loop: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-        },
-      });
-    </script>
-    <link class="icon" rel="icon" type="image/jpg" href="header-1.webp" />
-
+    <link rel="stylesheet" href="canvas.css" />
+    <link rel="stylesheet" href="backup.css" />
+    <link class="icon" rel="icon" type="image/jpg" href="header-2.webp" />
     <title>Sakshi Pandey</title>
-    
   </head>
   <body>
-    <span class="canvas-instruction"></span>  
-    
+    <span class="canvas-instruction"></span>
+
     <nav>
       <div class="nav__logo">! Welcome<span></span></div>
       <ul class="nav__links">
@@ -57,13 +30,15 @@
         <li class="link"><a href="#reviewd">Feedback</a></li>
       </ul>
       <right>
-      <button id="theme-toggle" class="theme-btn">☀️</button>
-      <button class="btn"><a href="#contactd" style="padding: 3px;">Contact</a></button>
+        <button id="theme-toggle" class="theme-btn">🌙</button>
+        <button class="btn">
+          <a href="#contactd" style="padding: 3px;">Contact</a>
+        </button>
       </right>
     </nav>
-    
+
     <header>
-      <div class="section__container header__container" >
+      <div class="section__container header__container">
         <div class="header__image">
           <img src="sakshi1.jpg" alt="header" />
           <img src="sakshi2.jpg" alt="header" />
@@ -73,9 +48,17 @@
             <p class="sub__header" style="color: aliceblue;">Hi, I am</p>
             <h1>Sakshi Pandey</h1>
             <p class="section__subtitle">
-              I am a passionate Computer Science major with a keen interest in cutting-edge technologies like augmented and virtual reality.<br /> My academic journey has been shaped by hands-on projects, ranging from developing responsive user interfaces in React to training computer vision models for real-world applications like aggression detection.<br /> I enjoy solving complex problems, building innovative solutions, and am driven by a desire to make technology more accessible and impactful. I am always eager to explore new challenges, learn, and grow in the ever-evolving tech landscape.
+              I am a passionate Computer Science major with a keen interest in
+              cutting-edge technologies like augmented and virtual reality.<br />
+              My academic journey has been shaped by hands-on projects, ranging
+              from developing responsive user interfaces in React to training
+              computer vision models for real-world applications like aggression
+              detection.<br />
+              I enjoy solving complex problems, building innovative solutions,
+              and am driven by a desire to make technology more accessible and
+              impactful. I am always eager to explore new challenges, learn, and
+              grow in the ever-evolving tech landscape.
             </p>
-            
           </div>
         </div>
       </div>
@@ -84,82 +67,124 @@
     <section class="projects" id="projectd">
       <div class="section__container projects__container">
         <h2 class="section__title">Projects</h2>
-        <p class="section__subtitle" >
-           Discover how I combine creativity and technical expertise to build innovative solutions! My portfolio showcases projects that turn ideas into reality. 🚀✨
+        <p class="section__subtitle">
+          Discover how I combine creativity and technical expertise to build
+          innovative solutions! My portfolio showcases projects that turn ideas
+          into reality. 🚀✨
         </p>
         <div class="projects__grid">
           <div class="projects__card" style="border-radius: 2rem;">
-            <img src="RE-dact.png"  />
+            <img src="cg.webp" alt="" height="200px" />
             <div class="projects__details">
               <p class="projects__title">GPA Calculator</p>
               <p class="projects__description">
-                Gpa Calculator Calculates your Gpa on the basis of your Grades in each subject and the respective credits required. This works in a similar way as Gpa is calculated in top universities like VIT.
-              </p><br /><br />
-              <div class="rating">Difficulty - <i class="ri-star-fill"></i> 4.8</div>
+                Gpa Calculator Calculates your Gpa on the basis of your Grades
+                in each subject and the respective credits required. This works
+                in a similar way as Gpa is calculated in top universities like
+                VIT.
+              </p>
+              <br /><br />
+              <div class="rating">Difficulty - <i class="ri-star-fill"></i>
+                4.8</div>
               <div class="projects__price">
                 <div class="price">Technologies: Html, CSS, JS</div>
-                <a href="https://github.com/sakshi-pandey22/Projects/commit/83157f1c8beada9647f1b38f996fe5e74d9ba223"><button class="btn">View Project</button></a>
+                <a
+                  href="https://sakshi-pandey22.github.io/GpaCalculator/"
+                  ><button class="btn">View Project</button></a
+                >
               </div>
             </div>
           </div>
-        
+
           <div class="projects__card" style="border-radius: 2rem;">
-            <img src="women.png" />
+            <img src="women.png" alt="" height="220px"/>
             <div class="projects__details">
               <p class="projects__title">Habit Tracker</p>
               <p class="projects__description">
-                This Habit Tracker lets you add the habit that you would want to enculcate and helps you visualize your achievements in a graphical way.
-              </p><br /><br />
-              <div class="rating">Difficulty - <i class="ri-star-fill"></i> 4.1</div>
+                This Habit Tracker lets you add the habit that you would want to
+                enculcate and helps you visualize your achievements in a
+                graphical way.
+              </p>
+              <br /><br />
+              <div class="rating">Difficulty - <i class="ri-star-fill"></i>
+                4.1</div>
               <div class="projects__price">
                 <div class="price">Technologies: Html, JS, CSS</div>
-                <a href="https://github.com/sakshi-pandey22/Projects/blob/main/habit.html"><button class="btn">View Project</button></a>
+                <a
+                  href="https://sakshi-pandey22.github.io/HabitTracker/"
+                  ><button class="btn">View Project</button></a
+                >
               </div>
             </div>
           </div>
-        
+
           <div class="projects__card" style="border-radius: 2rem;">
-            <img src="smw.png"  />
+            <img src="upsc.png" alt=""  height="140px"/>
             <div class="projects__details">
               <p class="projects__title">UPSC guider</p>
               <p class="projects__description">
-               An ultimate upsc guider that will efficiently guide you to pursue your civil Services Journey. You can prepare according to the exam that you focus on . It is a one stop solution for the entire preparation Of UPSC with all the materials provided here.
-              </p><br /><br /><br />
-              <div class="rating">Difficulty - <i class="ri-star-fill"></i> 4.4</div>
+                An ultimate upsc guider that will efficiently guide you to
+                pursue your civil Services Journey. You can prepare according to
+                the exam that you focus on . It is a one stop solution for the
+                entire preparation Of UPSC with all the materials provided here.
+              </p>
+              <br /><br /><br />
+              <div class="rating">Difficulty - <i class="ri-star-fill"></i>
+                4.4</div>
               <div class="projects__price">
                 <div class="price">Technologies: Html css js</div>
-                <a href="https://github.com/sakshi-pandey22/Projects/blob/main/index.html"><button class="btn">View Project</button></a>
+                <a
+                  href="https://sakshi-pandey22.github.io/UPSCGuider/"
+                  ><button class="btn">View Project</button></a
+                >
               </div>
             </div>
           </div>
-        
+
           <div class="projects__card" style="border-radius: 2rem;">
-            <img src="service.png" />
+            <img src="simon.jpg" alt=""  width="200px" height="140px"/>
             <div class="projects__details">
               <p class="projects__title">Simon Game</p>
               <p class="projects__description">
-               A fun game to get yourself occupied in . Explore the different level of difficulty that will blow your mind and make you more focused . This game is a fun way to pass your time and can be played by any age groups.
-              </p><br /><br /><br /><br />
-              <div class="rating">Difficulty - <i class="ri-star-fill"></i> 4.6</div>
+                A fun game to get yourself occupied in . Explore the different
+                level of difficulty that will blow your mind and make you more
+                focused . This game is a fun way to pass your time and can be
+                played by any age groups.
+              </p>
+              <br /><br /><br /><br />
+              <div class="rating">Difficulty - <i class="ri-star-fill"></i>
+                4.6</div>
               <div class="projects__price">
                 <div class="price">Technologies: html css js</div>
-                <a href="https://github.com/sakshi-pandey22/Projects/blob/main/simon.html"><button class="btn">View Project</button></a>
+                <a
+                  href="https://sakshi-pandey22.github.io/SimonGame/"
+                  ><button class="btn">View Project</button></a
+                >
               </div>
             </div>
           </div>
-        
-        
+
           <div class="projects__card" style="border-radius: 2rem;">
-            <img src="Airc.png"  />
+            <img src="story.jpeg" alt=""  height="180px"/>
             <div class="projects__details">
               <p class="projects__title">Story Maker</p>
               <p class="projects__description">
-               Dive into the world of story telling and listening where you get to read some spooky stories where you get to be the main Character. You get to decide all the characters of the story and the end result will blow your minds. This story maker app lets you witness the are of story telling.
+                Dive into the world of story telling and listening where you get
+                to read some spooky stories where you get to be the main
+                Character. You get to decide all the characters of the story and
+                the end result will blow your minds. This story maker app lets
+                you witness the are of story telling.
               </p>
-              <div class="rating">Difficulty - <i class="ri-star-fill"></i> 3.8</div>
+              <div class="rating">Difficulty - <i class="ri-star-fill"></i>
+                3.8</div>
               <div class="projects__price">
-                <div class="price">Technologies: Dart, Python, Flutter, Arduino ide, Flask</div>
-                <a href="https://github.com/sakshi-pandey22/Projects/blob/main/story.html"><button class="btn">View Project</button></a>
+                <div class="price">
+                  Technologies: Dart, Python, Flutter, Arduino ide, Flask
+                </div>
+                <a
+                  href="https://sakshi-pandey22.github.io/StoryMaker/"
+                  ><button class="btn">View Project</button></a
+                >
               </div>
             </div>
           </div>
@@ -169,18 +194,21 @@
         </div>
       </div>
     </section>
-    
 
-    
     <section class="section__container" id="skilld">
-      <div class="section__container skills-container">  
+      <div class="section__container skills-container">
         <div class="section__container">
-          <div><center>
-            <h2 class="section__title" >Skills</h2>
-            <p class="section__subtitle">
-              A versatile set of technical skills empowers me to create innovative solutions. From crafting responsive user interfaces to training AI models, I have the expertise to turn complex challenges into seamless experiences. Explore the capabilities that define my work.🚀💡
-            </p>
-          </div></center>
+          <div>
+            <center>
+              <h2 class="section__title">Skills</h2>
+              <p class="section__subtitle">
+                A versatile set of technical skills empowers me to create
+                innovative solutions. From crafting responsive user interfaces to
+                training AI models, I have the expertise to turn complex
+                challenges into seamless experiences. Explore the capabilities
+                that define my work.🚀💡
+              </p>
+          </div>
           <div class="portfolio__nav">
             <span><i class="ri-arrow-left-s-line"></i></span>
             <span><i class="ri-arrow-right-s-line"></i></span>
@@ -191,15 +219,19 @@
             <img src="skill1.webp" alt="portfolio" />
             <div class="portfolio__details1">
               <p class="portfolio__subtitle1">Programming Languages</p>
-              <p class="portfolio__title1">Proficient in Python, JavaScript, and C++ for building scalable and efficient applications.</p>
+              <p class="portfolio__title1">
+                Proficient in Python, JavaScript, and C++ for building
+                scalable and efficient applications.
+              </p>
             </div>
           </div>
           <div class="portfolio__card1">
             <img src="skillwd (1).webp" alt="portfolio" />
             <div class="portfolio__details1">
               <p class="portfolio__subtitle1">Web Development</p>
-              <p class="portfolio__title1">Experienced in creating responsive and dynamic web interfaces using React, HTML, CSS, and Node.js.
-
+              <p class="portfolio__title1">
+                Experienced in creating responsive and dynamic web interfaces
+                using React, HTML, CSS, and Node.js.
               </p>
             </div>
           </div>
@@ -207,15 +239,21 @@
             <img src="skillgt.webp" alt="portfolio" />
             <div class="portfolio__details1">
               <p class="portfolio__subtitle1">Version Control</p>
-              <p class="portfolio__title1">Skilled in using Git and GitHub for collaborative software development and version management.</p>
+              <p class="portfolio__title1">
+                Skilled in using Git and GitHub for collaborative software
+                development and version management.
+              </p>
             </div>
           </div>
-          
+
           <div class="portfolio__card1">
             <img src="skilldb.webp" alt="portfolio" />
             <div class="portfolio__details1">
               <p class="portfolio__subtitle1">Database Management</p>
-              <p class="portfolio__title1">Knowledgeable in working with MySQL and MongoDB to design and manage structured and unstructured data.</p>
+              <p class="portfolio__title1">
+                Knowledgeable in working with MySQL and MongoDB to design and
+                manage structured and unstructured data.
+              </p>
             </div>
           </div>
         </div>
@@ -235,14 +273,18 @@
         </div>
         <div class="gallary__content">
           <div>
-            <h2 class="section__title">
-              Feedback -
-            </h2>
+            <h2 class="section__title">Feedback -</h2>
             <p class="section__subtitle">
-            <strong>Mentor</strong> - "Sakshi is a dedicated and hardworking student who is always eager to learn and explore new technologies. Her passion for computer science and innovation is truly inspiring.
+              <strong>Mentor</strong> - "Sakshi is a dedicated and hardworking
+              student who is always eager to learn and explore new
+              technologies. Her passion for computer science and innovation is
+              truly inspiring.
               <br />
               <br />
-              <strong>Supervisor</strong> - "Sakshi is a talented developer with a strong foundation in programming and problem-solving. Her attention to detail and creative thinking make her a valuable asset to any team."
+              <strong>Supervisor</strong> - "Sakshi is a talented developer with
+              a strong foundation in programming and problem-solving. Her
+              attention to detail and creative thinking make her a valuable
+              asset to any team."
               <br />
           </div>
         </div>
@@ -254,57 +296,113 @@
         <div class="feedback__content">
           <h2 class="section__title">Your feedback matters!</h2>
           <p class="section__subtitle">
-            I’d love to hear your thoughts on my work—what you liked, what could be better, or any ideas for improvement. 🚀✨  
+            I’d love to hear your thoughts on my work—what you liked, what could
+            be better, or any ideas for improvement. 🚀✨
           </p>
         </div>
         <div class="feedback__form">
           <form>
-            <input type="text" placeholder="Your feedback here" style="background-color: var(--clr);" />
-            <button class="btn" type="submit"><a href="thanks.html">Send</a></button>
+            <input
+              type="text"
+              placeholder="Your feedback here"
+              style="background-color: var(--clr);"
+            />
+            <button class="btn" type="submit">
+              <a href="thanks.html">Send</a>
+            </button>
           </form>
         </div>
       </div>
     </section>
 
-
-
-    <footer class="footer" id="contactd" >
+    <footer class="footer" id="contactd">
       <div class="section__container footer__container">
         <div class="footer__col">
-          
           <h3>Thanks for stopping by<span>.</span></h3>
           <p>
             <br />
-            Whether you're here to explore my work, collaborate on a project, or just say hello, I'm thrilled you made it this far. 🚀
+            Whether you're here to explore my work, collaborate on a project, or
+            just say hello, I'm thrilled you made it this far. 🚀
             <br />
             📬 Let’s connect!<br />
-            Feel free to reach out on LinkedIn, check out my code on GitHub, or send me a message. I’d love to hear from you! 💬
+            Feel free to reach out on LinkedIn, check out my code on GitHub, or
+            send me a message. I’d love to hear from you! 💬
             <br />
             🌟 Keep building, keep dreaming, and keep innovating!
-             <br />Until next time, happy coding! 💻✨
+            <br />
+            Until next time, happy coding! 💻✨
           </p>
         </div>
         <div class="footer__col">
           <h4>Socials</h4>
           <br />
-          <p><img src="assets/icons/github.svg" alt="GitHub"><a href="https://github.com/user-sakshi/">GitHub</a></p>
-          <p><img src="assets/icons/ig.svg" alt="Instagram"><a href="https://www.instagram.com/sakshii_p_/">Instagram</a></p>
-          <p><img src="assets/icons/x.svg" alt="X"><a href="https://x.com/_Sakshi_Pandey">X.com</a></p>
+          <p>
+            <img src="assets/icons/github.svg" alt="GitHub" /><a
+              href="https://github.com/user-sakshi/"
+              >GitHub</a
+            >
+          </p>
+          <p>
+            <img src="assets/icons/ig.svg" alt="Instagram" /><a
+              href="https://www.instagram.com/sakshii_p_/"
+              >Instagram</a
+            >
+          </p>
+          <p>
+            <img src="assets/icons/x.svg" alt="X" /><a
+              href="https://x.com/_Sakshi_Pandey"
+              >X.com</a
+            >
+          </p>
         </div>
-        
+
         <div class="footer__col">
           <h4>Contacts</h4>
           <br />
           <p>
-            <span>Address:</span> B-33 Ratan Nagar Gupteshwar<br>(Zip - 482001), Jabalpur, <br />Madhya Pradesh,India
+            <span>Address:</span> B-33 Ratan Nagar Gupteshwar<br />(Zip -
+            482001), Jabalpur, <br />Madhya Pradesh,India
           </p>
-          <p><span>Email:</span> sakshi.pandey2023@vitstudent.ac.in</p>
+          <p>
+            <span>Email:</span>
+            sakshi.pandey2023@vitstudent.ac.in
+          </p>
           <p><span>Phone:</span> +91-7000095247</p>
         </div>
       </div>
-      
     </footer>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="scripts.js" defer></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+
   </body>
 </html>
